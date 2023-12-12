@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.admin.students.StudentsFragment"
+    android:background="@color/background">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Студенты"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
+
+    <Button
+
+        android:id="@+id/addStudentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить студента"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/studentsRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"/>
+
+</FrameLayout>

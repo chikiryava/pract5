@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textColor="@color/text_color"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:text="Регистрация"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/usernameEditTextRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:hint="Логин"
+            android:textColor="@color/text_color"
+            android:textColorHint="#AD121010"
+            android:inputType="text"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/passwordEditTextRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Пароль"
+            android:textColor="@color/text_color"
+            android:textColorHint="#AD121010"
+            android:inputType="textPassword"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/registerButtonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Зарегистрироваться"
+            android:layout_marginBottom="16dp"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</LinearLayout>
